@@ -1,0 +1,155 @@
+body {
+  overflow: hidden;
+}
+.navbar-brand {
+  margin-left: 50px;
+  font-size: 35px;
+  color: rgb(31, 94, 182);
+}
+
+.navbar-nav {
+  margin-left: 50px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+body {
+  background-color: rgba(80, 177, 232, 0.4);
+  /* background-color: #e2f0f9; */
+  /* background-color: #b0dde4; */
+  /* background-color: #695cfe; */
+  overflow-y: scroll;
+}
+
+.bg-body-tertiary {
+  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+
+.icon {
+  color: #212529;
+  margin-right: 20px;
+}
+
+.me-2 {
+  margin-right: 0.5rem !important;
+}
+
+.form-control {
+  padding: 0.375rem 5.75rem;
+  padding-left: 1rem;
+}
+
+.btn-outline-primary {
+  margin-right: 4rem;
+}
+
+.main-container {
+  /* position: fixed; */
+  display: flex;
+  margin-top: 11px;
+  margin-left: 110px;
+}
+
+/* .main-container#blur.active {
+  filter: blur(20px);
+} */
+
+.container1,
+.container2 {
+  display: flex;
+}
+
+.container2 {
+  margin-top: 362px;
+  margin-left: -1553px;
+}
+
+.main-container .sub-container {
+  /* height: 0; */
+  width: 1271px;
+  background-color: white;
+  margin-top: 2px;
+  border-radius: 5px;
+  margin-right: 18px;
+  margin-left: 62px;
+}
+
+h1 {
+  font-size: 47px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36%;
+}
+
+#inputIP,
+#inputSubnet {
+  width: 30%;
+  border: 2px solid #0d6efd;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+  padding-right: 20px;
+}
+
+.label_ip,
+.label_subnet,
+.label_method {
+  font-size: 20px;
+  /* text-align: left; */
+  margin-left: 60px;
+  padding-left: 50px;
+}
+
+.label_subnet {
+  padding-left: 110px;
+}
+
+.label_method {
+  margin-left: 37%;
+  /* text-align: center; */
+  font-size: 20px;
+}
+
+.show-method {
+  margin-left: 10px;
+  height: 16px;
+  width: 20px;
+}
+
+h1 {
+  color: #0d6efd;
+  font-size: 20px;
+  font-weight: 500px;
+  padding-left: 20px;
+}
+
+#calculate {
+  margin-top: 28px;
+  font-size: 20px;
+  margin-left: 22%;
+  border: 2px solid;
+  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+  margin-bottom: 30px;
+}
+
+/* .form-control {
+  flex-wrap: wrap;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.me-2 {
+  margin-right: 0.5rem !important;
+  padding: 0.375rem 5.75rem;
+  padding-left: 1rem;
+} */

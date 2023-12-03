@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/analytics.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar_style.css" />
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IP World !!</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">More...</a>
+              </li>
+            </ul>
+            <i class="bx bx-search-alt icon" id="search"></i>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="sidebar close">
+      <div class="side-header-text">
+        <span class="side-name">Main Components</span>
+      </div>
+      <i class="bx bx-chevron-right toggle"></i>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="index.html"
+                ><i class="bx bx-home icon"></i
+                ><span class="nav text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="analytics.html"
+                ><i class="bx bx-chart icon"></i
+                ><span class="nav text">Analytics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="table.html"
+                ><i class="bx bx-table icon"></i
+                ><span class="nav text">Table</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-bell icon"></i
+                ><span class="nav text">Notification</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="insights.html"
+                ><i class="bx bx-bulb icon"></i
+                ><span class="nav text">Insights</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="explore.html"
+                ><i class="bx bx-globe icon"></i
+                ><span class="nav text">Explore</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-cog icon"></i
+                ><span class="nav text">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-content">
+          <div class="mode">
+            <div class="moon-sun">
+              <!-- Will do it afterwords -->
+            </div>
+            <!-- <span class="mode-text text">Dark Mode</span> -->
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </div>
+          <div class="logout">
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-log-out icon"></i
+                ><span class="nav text">Sign Out</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-section__container">
+      <div class="top-hero__background"></div>
+      <p class="top-hero__title">Top Websites Ranking</p>
+      <h1 class="top-hero__text">Most Visited Websites In The World</h1>
+    </div>
+    <div class="app-section__content">
+      <div class="app-section__container">
+        <div class="top-table__container">
+          <table class="top-table__content">
+            <thead class="top-table__header-container" style="height: 66.4px">
+              <tr class="top-table__header" style="position: static">
+                <th class="top-table__column top-table__column--rank">
+                  Rank<span class="swui-popper__info-icon-no-break"></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+                <th class="top-table__column top-table__column--website">
+                  Website<span class="swui-popper__info-icon-no-break"></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+                <th class="top-table__column top-table__column--category">
+                  Category<span class="swui-popper__info-icon-no-break"></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+                <th class="top-table__column top-table__column--rank-change">
+                  Rank Change<span
+                    class="swui-popper__info-icon-no-break"
+                  ></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+                <th
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  Avg. Visit Duration<span
+                    class="swui-popper__info-icon-no-break"
+                  ></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+                <th
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  Pages / Visit<span
+                    class="swui-popper__info-icon-no-break"
+                  ></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+                <th class="top-table__column top-table__column--bounce-rate">
+                  Bounce Rate<span
+                    class="swui-popper__info-icon-no-break"
+                  ></span
+                  ><span class="swui-popper__info-icon"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.004 1.513a5.5 5.5 0 1 0 .018 11 5.5 5.5 0 0 0-.018-11ZM.513 7.023a6.5 6.5 0 1 1 13-.02 6.5 6.5 0 0 1-13 .02Z"
+                      ></path>
+                      <path
+                        d="M7 5.667c-.4 0-.667.266-.667.666v3.334c0 .4.267.666.667.666s.667-.266.667-.666V6.333c0-.4-.267-.666-.667-.666ZM7 5a.667.667 0 1 0 .052-1.333A.667.667 0 0 0 7 5Z"
+                      ></path></svg
+                  ></span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="top-table__body">
+              <tr class="top-table__row">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">1</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/google.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=google.com&amp;t=2&amp;s=1&amp;h=eb35e0fbafa3eb290132ffdfe47187d950d68daaa659ec1bd4b4e834b8f16461"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">google.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/search-engines/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Search Engines</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:10:51</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">8.80</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">28.1%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">2</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/youtube.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=youtube.com&amp;t=2&amp;s=1&amp;h=e117fb09ba0a34dee9830863bf927d29fc864e342583a36a667bf12346e88e20"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">youtube.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/arts-and-entertainment/tv-movies-and-streaming/"
+                    class="tw-table__category"
+                    >Arts &amp; Entertainment &gt; Streaming &amp; Online TV</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:19:51</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">11.49</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">21.71%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">3</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/facebook.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=facebook.com&amp;t=2&amp;s=1&amp;h=be773d6b77aa3d59b6a671c5c27ad729b1ae77400e89776e2f749cce6b926c4b"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">facebook.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:10:35</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">9.03</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">31.27%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">4</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/instagram.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=instagram.com&amp;t=2&amp;s=1&amp;h=acbe9ff09f263f0114ce8473b3d3e401bfdc360d5aff845e04182e8d2335ba49"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">instagram.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:14</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">11.31</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">35.19%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">5</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/twitter.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=twitter.com&amp;t=2&amp;s=1&amp;h=05438debe431144d9c727828570d1754a25bd9286bc14f3aa65a4f05b9057e25"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">twitter.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:10:52</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">10.09</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">31.91%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">6</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/baidu.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=baidu.com&amp;t=2&amp;s=1&amp;h=178228b3c52f0d8b0cb0b138670cccb41d21f5ff03551da7375a97012005daa7"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">baidu.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/search-engines/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Search Engines</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:04:43</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">7.89</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">22.55%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">7</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/wikipedia.org/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=wikipedia.org&amp;t=2&amp;s=1&amp;h=460eb7e23fbc3666abf9d8b5497c3ca33d1de8ff9c66dd5d182c7633fe475c61"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">wikipedia.org</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/reference-materials/dictionaries-and-encyclopedias/"
+                    class="tw-table__category"
+                    >Reference Materials &gt; Dictionaries and Encyclopedias</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:03:55</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">3.10</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">59.48%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">8</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/yahoo.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=yahoo.com&amp;t=2&amp;s=1&amp;h=a135e030f99f8070348f49e9e1879c9093cdb33ad6b658fa2593fed09fa6060e"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">yahoo.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/news-and-media/"
+                    class="tw-table__category"
+                    >News &amp; Media Publishers</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:08</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">5.48</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">34.05%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">9</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/yandex.ru/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=yandex.ru&amp;t=2&amp;s=1&amp;h=f0674e5e56f12160a4f31738b3aecd42e2ebffde994db0c5ebdd214ef6dde60e"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">yandex.ru</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/search-engines/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Search Engines</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:09</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">8.96</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">24.69%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">10</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/whatsapp.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=whatsapp.com&amp;t=2&amp;s=1&amp;h=d766df2c2537e7a216389c9fbc4118d24ceca7fd169c78048289caab483ba581"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">whatsapp.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:19:48</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">1.72</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">40.19%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">11</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/xvideos.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=xvideos.com&amp;t=2&amp;s=1&amp;h=f5d29d9ed79e14cfc8033f2eb7d9290f977f74104155880926ae289e214c3fd2"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">xvideos.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a href="/top-websites/adult/" class="tw-table__category"
+                    >Adult</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:45</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">8.97</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">18.04%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">12</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/amazon.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=amazon.com&amp;t=2&amp;s=1&amp;h=43a07f575342a8fbb74cd3ca3ebf33760f2fbfbff603546fb4f7208244147dcc"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">amazon.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/e-commerce-and-shopping/marketplace/"
+                    class="tw-table__category"
+                    >eCommerce &amp; Shopping &gt; Marketplace</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:07:11</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">9.84</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">34.5%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">13</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/tiktok.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=tiktok.com&amp;t=2&amp;s=1&amp;h=398f47f8e1724c54f9f760f76988b2f9cf0c4111523f9d3f26e03d62731b0c17"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">tiktok.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:03:37</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">7.24</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">36.69%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">14</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/pornhub.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=pornhub.com&amp;t=2&amp;s=1&amp;h=a7cd82dfb7084774816cabbe511a6b4b7a4f6b6bb484a76d3a4b7c63e66cdebb"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">pornhub.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a href="/top-websites/adult/" class="tw-table__category"
+                    >Adult</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:40</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">8.19</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">21.47%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">15</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/xnxx.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=xnxx.com&amp;t=2&amp;s=1&amp;h=83f7124390efdbd049ae2139a52591e3767a84e0ac3a812b5214a2fcc1cc4070"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">xnxx.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a href="/top-websites/adult/" class="tw-table__category"
+                    >Adult</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:00</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">11.18</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">12.07%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">16</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/live.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=live.com&amp;t=2&amp;s=1&amp;h=4f68d3ffc8947028c823ba7e44ba3467cd07f113e6cbf03281186fb2ff9369d2"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">live.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/email/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Email</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:07</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">8.29</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">20.53%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">17</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/yahoo.co.jp/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=yahoo.co.jp&amp;t=2&amp;s=1&amp;h=009b21944c61439f0bec7afd2e150470de636fa4d2b2cee4804e537911a0e7fc"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">yahoo.co.jp</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/news-and-media/"
+                    class="tw-table__category"
+                    >News &amp; Media Publishers</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:06</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.29</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">31.07%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">18</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/reddit.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=reddit.com&amp;t=2&amp;s=1&amp;h=66f2412047e0362ec60d5583d4b186511a8e859446bb112c60d22968facae906"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">reddit.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:16</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.18</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">40.05%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">19</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/docomo.ne.jp/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=docomo.ne.jp&amp;t=2&amp;s=1&amp;h=16a87fc9a45cb81edf2e6ba66104b6480c2f443bb36d5ed521eb5935c1d45f53"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">docomo.ne.jp</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/telecommunications/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt;
+                    Telecommunications</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:05:47</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.77</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">27.37%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">20</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/linkedin.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=linkedin.com&amp;t=2&amp;s=1&amp;h=64a0e043fc8ff74ac308e3f0e136ae7d1b6544be4e9e704ad7fd062070be48a1"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">linkedin.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:07:33</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">7.73</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">24.87%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">21</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/openai.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=openai.com&amp;t=2&amp;s=1&amp;h=2e9ae820de5f71b75c263fb8b396891383bdd6172185a3db509f79decb5023dc"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">openai.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/computers-electronics-and-technology/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Computers
+                    Electronics and Technology - Other</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:05:13</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.38</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">36.27%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">22</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/office.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=office.com&amp;t=2&amp;s=1&amp;h=c320c9bba8706c784b863ecf11b87fe62249f94477c3fc4a3787b119bc4d9db9"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">office.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/programming-and-developer-software/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Programming and
+                    Developer Software</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:56</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">7.58</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">28.14%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">23</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/xhamster.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=xhamster.com&amp;t=2&amp;s=1&amp;h=52f199cf7134b108239b1e5dcd4503fbc1a48d8f2fd45ef8610ec0c5ac0c8b00"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">xhamster.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a href="/top-websites/adult/" class="tw-table__category"
+                    >Adult</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:07:24</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.15</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">21.89%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">24</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/netflix.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=netflix.com&amp;t=2&amp;s=1&amp;h=68a2885c7960ece3b1d7dd9b592e7ad1b35ddeb89fc89650435c1507f3f1c0b3"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">netflix.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/arts-and-entertainment/tv-movies-and-streaming/"
+                    class="tw-table__category"
+                    >Arts &amp; Entertainment &gt; Streaming &amp; Online TV</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:05:39</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.30</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">34.7%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">25</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/dzen.ru/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=dzen.ru&amp;t=2&amp;s=1&amp;h=76e674010f5f1d4ba0f2d8749e9402436d316a06483f5e583234a3df27fc1291"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">dzen.ru</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/community-and-society/community-and-society/"
+                    class="tw-table__category"
+                    >Community and Society &gt; Community and Society - Other</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:20</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.84</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">37.28%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">26</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a
+                    href="/website/microsoftonline.com/"
+                    class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=microsoftonline.com&amp;t=2&amp;s=1&amp;h=9b3ce90d85cdd9b1437910383a87ef98af7c2d1ecfb7d9736ee6d99aa65c01e3"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain"
+                      >microsoftonline.com</span
+                    ></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/programming-and-developer-software/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Programming and
+                    Developer Software</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:02:05</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">2.59</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">40.51%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">27</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/bing.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=bing.com&amp;t=2&amp;s=1&amp;h=a37ae326ae78ba2da30e9c8da030e84e07d4c76c5452c239f85c9050781ffde8"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">bing.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/search-engines/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Search Engines</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:07:08</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.52</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">30.12%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">28</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/bilibili.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=bilibili.com&amp;t=2&amp;s=1&amp;h=1a9d57d94f62bc96ce60b3f2440e9cfe1431dd4c1aeca128d063298eedea3382"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">bilibili.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/arts-and-entertainment/animation-and-comics/"
+                    class="tw-table__category"
+                    >Arts &amp; Entertainment &gt; Animation and Comics</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:20:22</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">12.46</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">14.05%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">29</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/mail.ru/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=mail.ru&amp;t=2&amp;s=1&amp;h=0449e16df76ff278543768e084e7d6633e3ac66f98e13696ffcd4e1d25a51851"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">mail.ru</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/email/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Email</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >2</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:13</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.17</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">31.56%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">30</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/samsung.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=samsung.com&amp;t=2&amp;s=1&amp;h=acbcd0840863d87073a9c8b029e1f766fd1432cf4d709b92c86a0490904c5c0d"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">samsung.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/consumer-electronics/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Consumer
+                    Electronics</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:02:36</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">2.48</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">53.57%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">31</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/vk.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=vk.com&amp;t=2&amp;s=1&amp;h=96c7d9c0167ed93f1aba87c7ec931f6e76e122c08d08cbf046db42369bac906e"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">vk.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:12:03</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">14.42</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">27.75%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">32</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/naver.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=naver.com&amp;t=2&amp;s=1&amp;h=d0cb2a7c7e5048fcae43abc238269736c1eaae31a8f89160c5be0080115448fc"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">naver.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/news-and-media/"
+                    class="tw-table__category"
+                    >News &amp; Media Publishers</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:15:44</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">11.60</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">25.93%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">33</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/pinterest.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=pinterest.com&amp;t=2&amp;s=1&amp;h=ec976160ca16242c6ab9ed7bc48e7b0f04c4100ceac5bcb6d3ea55450aa12210"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">pinterest.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:05:47</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.05</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">41.33%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">34</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/microsoft.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=microsoft.com&amp;t=2&amp;s=1&amp;h=47a418caa42749a0e924f26be103fa62a0ddf9cec8ef2c315a29ea3dbe296fbc"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">microsoft.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/programming-and-developer-software/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Programming and
+                    Developer Software</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >2</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:04:09</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">3.64</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">48.19%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">35</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/discord.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=discord.com&amp;t=2&amp;s=1&amp;h=133c0aed0b1b6c3760db4875f51accd42ff1157854dd0ee0eabab700af80a348"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">discord.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/social-networks-and-online-communities/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Social Media
+                    Networks</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:06:37</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.98</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">50.47%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">36</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/weather.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=weather.com&amp;t=2&amp;s=1&amp;h=4211c15438cff54a25f9d9ee48f05a68bd36ddd7ffacdf93e3449739797bb3cb"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">weather.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/science-and-education/weather/"
+                    class="tw-table__category"
+                    >Science and Education &gt; Weather</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >3</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:00:54</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">1.97</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">37.85%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">37</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/max.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=max.com&amp;t=2&amp;s=1&amp;h=ae8a407d9f60e22c1bf0bbbfb9f972350e0d15858da9903bfbc5c7c142f0683d"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">max.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/arts-and-entertainment/tv-movies-and-streaming/"
+                    class="tw-table__category"
+                    >Arts &amp; Entertainment &gt; Streaming &amp; Online TV</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:06:06</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">6.09</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">34.05%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">38</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/twitch.tv/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=twitch.tv&amp;t=2&amp;s=1&amp;h=355e363b41e14a959cda6ccf0989ff8444402dd8844820c31b74a89bf3ed2792"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">twitch.tv</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/games/video-games-consoles-and-accessories/"
+                    class="tw-table__category"
+                    >Games &gt; Video Games Consoles and Accessories</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:09:07</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.02</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">28.7%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">39</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/turbopages.org/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=turbopages.org&amp;t=2&amp;s=1&amp;h=eb1aaf99c62734c0fbc178c86066bb049e072d0386a106215057174afc1ce8c6"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">turbopages.org</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/news-and-media/"
+                    class="tw-table__category"
+                    >News &amp; Media Publishers</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:01:25</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">3.46</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">21.8%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">40</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/zoom.us/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=zoom.us&amp;t=2&amp;s=1&amp;h=8d7b62ea2a4830de4939cf04e4b067a49a8b4b203528c8cc3dc73a4a92f6efdb"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">zoom.us</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/computers-electronics-and-technology/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Computers
+                    Electronics and Technology - Other</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:03:35</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">3.05</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">35.63%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">41</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/duckduckgo.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=duckduckgo.com&amp;t=2&amp;s=1&amp;h=dff2821cfcef1d36cdbbf5a78aa7eac7d5da8ef335fa460cfd2cc6180c60aa2a"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">duckduckgo.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/search-engines/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Search Engines</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >2</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:44</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">7.04</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">11.15%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">42</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/qq.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=qq.com&amp;t=2&amp;s=1&amp;h=2bcce8b878b3521d8c830783a6dfa0697cd2da2b96ca7ec88ba8fbd837e01d7b"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">qq.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/news-and-media/"
+                    class="tw-table__category"
+                    >News &amp; Media Publishers</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--equal tw-table__rank-change"
+                    >=</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:03:21</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">3.15</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">47.36%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">43</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/xhamster.desi/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=xhamster.desi&amp;t=2&amp;s=1&amp;h=f8ed003ac651d5673027a9677294cbd3ce07666c012aff15c06ae2c3907b70c8"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">xhamster.desi</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a href="/top-websites/adult/" class="tw-table__category"
+                    >Adult</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >2</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:03:24</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">3.38</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">13.61%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">44</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/quora.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=quora.com&amp;t=2&amp;s=1&amp;h=2292ee60dfa24a38b0f960b7755fce61c1f7ba685f4f9290b129e2e180491c12"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">quora.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/reference-materials/dictionaries-and-encyclopedias/"
+                    class="tw-table__category"
+                    >Reference Materials &gt; Dictionaries and Encyclopedias</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >5</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:02:40</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">2.33</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">61.29%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">45</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/sharepoint.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=sharepoint.com&amp;t=2&amp;s=1&amp;h=e80016f238bd5f77055653d82e17e9736e20e1a4382bd030ad60eb02cee57358"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">sharepoint.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/computers-electronics-and-technology/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Computers
+                    Electronics and Technology - Other</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:07:04</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">5.62</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">29.88%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">46</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/globo.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=globo.com&amp;t=2&amp;s=1&amp;h=d43aa75cabc939383c66271b0de2de1cce20a20180a27cb130bf5d699031211e"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">globo.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/news-and-media/"
+                    class="tw-table__category"
+                    >News &amp; Media Publishers</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >1</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:04:13</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">2.49</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">46.42%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">47</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/cricbuzz.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=cricbuzz.com&amp;t=2&amp;s=1&amp;h=5c2a0a9ef99193f87db569f7818a4ead30a9118f06a23f999ec5b41dbfed2294"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">cricbuzz.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/sports/fantasy-sports/"
+                    class="tw-table__category"
+                    >Sports &gt; Fantasy Sports</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >30</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:08:47</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.76</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">36.84%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">48</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/stripchat.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=stripchat.com&amp;t=2&amp;s=1&amp;h=a748a46a573e70399ff913741591dc8423fa350a1791a8ca220108abf0ca5fa2"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">stripchat.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a href="/top-websites/adult/" class="tw-table__category"
+                    >Adult</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >4</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:05:09</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.38</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">43.73%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">49</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/t.me/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=t.me&amp;t=2&amp;s=1&amp;h=3151265a64fa94112029f3e81d07655b605dd870fad655049a47e0f89cb877cc"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">t.me</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/computers-electronics-and-technology/computers-electronics-and-technology/"
+                    class="tw-table__category"
+                    >Computers Electronics and Technology &gt; Computers
+                    Electronics and Technology - Other</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--up tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >2</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:03:16</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">2.49</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">62.15%</span>
+                </td>
+              </tr>
+              <tr class="top-table__row top-table__row--no-print">
+                <td class="top-table__column top-table__column--rank">
+                  <span class="tw-table__rank">50</span>
+                </td>
+                <td class="top-table__column top-table__column--website">
+                  <a href="/website/fandom.com/" class="tw-table__compare"
+                    ><span class="wa-favicon wa-favicon--sm"
+                      ><img
+                        width="16"
+                        height="16"
+                        src="https://site-images.similarcdn.com/image?url=fandom.com&amp;t=2&amp;s=1&amp;h=285c419cea12e9eca78123e80a368fd3a390e10303a3c4ffb70447e980df3212"
+                        alt=""
+                        loading="lazy" /><span
+                        class="wa-favicon__color"
+                      ></span></span
+                    ><span class="tw-table__domain">fandom.com</span></a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--category">
+                  <a
+                    href="/top-websites/arts-and-entertainment/arts-and-entertainment/"
+                    class="tw-table__category"
+                    >Arts &amp; Entertainment &gt; Arts and Entertainment -
+                    Other</a
+                  >
+                </td>
+                <td class="top-table__column top-table__column--rank-change">
+                  <span
+                    class="app-parameter-change app-parameter-change--down tw-table__rank-change"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M2.25 4.5h7.5L6 8.25Zm0 0"></path></svg
+                    >2</span
+                  >
+                </td>
+                <td
+                  class="top-table__column top-table__column--avg-visit-duration"
+                >
+                  <span class="tw-table__avg-visit-duration">00:05:03</span>
+                </td>
+                <td
+                  class="top-table__column top-table__column--pages-per-visit"
+                >
+                  <span class="tw-table__pages-per-visit">4.52</span>
+                </td>
+                <td class="top-table__column top-table__column--bounce-rate">
+                  <span class="tw-table__bounce-rate">48.44%</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="top-table__cta">
+          <a
+            class="swui-button swui-button--solid swui-button--primary"
+            data-test="button"
+            href="https://account.similarweb.com/journey/registration?action=topwebsites_button_freetrial"
+            ><span>See full list</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="swui-button__icon swui-button__icon--end"
+            >
+              <path
+                d="M3 7.375h7.606L7.112 3.881 8 3l5 5-5 5-.881-.881 3.487-3.494H3v-1.25Z"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>

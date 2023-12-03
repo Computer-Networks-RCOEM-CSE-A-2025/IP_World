@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: rgba(80, 177, 232, 0.4);
+}
+
+.app-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1% 0 0 10%;
+  padding: 20px;
+  width: 80%;
+}
+
+.top-hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #3498db,
+    #2980b9
+  ); /* Gradient background */
+  z-index: -1;
+}
+
+.top-hero__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5a5b5b; /* Title color */
+  margin: 10px 0 10px 0;
+}
+
+.top-hero__text {
+  font-size: 18px;
+  color: #5a5b5b; /* Text color */
+  margin-bottom: 20px;
+}
+
+.app-section__content {
+  max-width: 1200px;
+  margin: 20px auto;
+  /* margin-left: 25px; */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.top-table__content {
+  width: 100%;
+  border-collapse: collapse;
+  /* margin-top: 20px; */
+}
+
+.top-table__header-container {
+  background-color: #f2f2f2;
+}
+
+.top-table__header,
+.top-table__row {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.top-table__column {
+  padding: 10px;
+  text-align: left;
+}
+
+.top-table__column--rank,
+.top-table__column--rank-change,
+.top-table__column--avg-visit-duration,
+.top-table__column--pages-per-visit,
+.top-table__column--bounce-rate {
+  width: 10%;
+}
+
+.top-table__column--website {
+  width: 30%;
+}
+
+.top-table__column--category {
+  width: 20%;
+}
+
+.top-table__cta {
+  margin-top: 20px;
+}
+
+.swui-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.swui-button:hover {
+  background-color: #45a049;
+}
+
+.swui-button__icon--end {
+  margin-left: 5px;
+}

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: rgb(13, 97, 214);
+  --primary-color-light: #f6f5ff;
+  --text-color: #707070;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body {
+  overflow: scroll;
+}
+
+.sidebar {
+  position: fixed;
+  top: 91px;
+  height: 85%;
+  width: 250px;
+  background: var(--sidebar-color);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 7px 17px rgba(70, 70, 70, 0.15);
+  transition: var(--tran-05);
+}
+
+.sidebar.close {
+  width: 78px;
+}
+
+.sidebar .side-header-text {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 401;
+  justify-content: center;
+  top: 5px;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar .sidebar-header-text,
+.sidebar .text,
+.sidebar .search-box {
+  transition: var(--tran-03);
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.sidebar.close .side-header-text,
+.sidebar.close .text,
+.sidebar.close .search-box input {
+  opacity: 0;
+}
+
+.sidebar .toggle {
+  position: absolute;
+  top: 7%;
+  right: -13px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  font-size: 22px;
+}
+
+.menu-bar {
+  margin-top: 15px;
+}
+
+.sidebar li {
+  height: 35px;
+  margin-top: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  margin-left: 10px;
+}
+
+.sidebar li .icon,
+.sidebar li .text {
+  min-width: 42px;
+  font-size: 18px;
+  color: var(--text-color);
+  transition: var(--tran-02);
+}
+
+.menu-links {
+  padding-left: 0px;
+}
+
+.sidebar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  text-decoration: none;
+  border-radius: 6px;
+  margin-left: 18px;
+  /* padding: 5px; */
+  padding-left: 10px;
+  margin-right: 25px;
+}
+
+.sidebar li a:hover {
+  background-color: var(--primary-color);
+  margin-top: 0px;
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+  color: var(--sidebar-color);
+}
+
+.sidebar.close li a:hover {
+  height: 115%;
+  width: 50%;
+  white-space: nowrap;
+  margin-top: 0px;
+}
+
+.logout {
+  margin-top: 60px;
+}

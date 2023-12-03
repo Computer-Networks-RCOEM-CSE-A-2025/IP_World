@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar_style.css" />
+    <style>
+      .sidebar {
+        top: 117px;
+      }
+      .info {
+        margin-left: 12%;
+        margin-top: -1%;
+        width: 81%;
+        height: 100%;
+        text-align: justify;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .info p,
+      h1,
+      h5,
+      ul {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+        font-weight: 200;
+      }
+
+      h3 {
+        margin: 35px 0 15px 0;
+      }
+      .accordion {
+        margin: 5px 0 55px 0;
+      }
+
+      .container {
+        /* width: 80%; */
+        /* height: 100px; */
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IP World !!</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">More...</a>
+              </li>
+            </ul>
+            <i class="bx bx-search-alt icon" id="search"></i>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="sidebar close">
+      <div class="side-header-text">
+        <span class="side-name">Main Components</span>
+      </div>
+      <i class="bx bx-chevron-right toggle"></i>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="index.html"
+                ><i class="bx bx-home icon"></i
+                ><span class="nav text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="analytics.html"
+                ><i class="bx bx-chart icon"></i
+                ><span class="nav text">Analytics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="table.html"
+                ><i class="bx bx-table icon"></i
+                ><span class="nav text">Table</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-bell icon"></i
+                ><span class="nav text">Notification</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="insights.html"
+                ><i class="bx bx-bulb icon"></i
+                ><span class="nav text">Insights</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="explore.html"
+                ><i class="bx bx-globe icon"></i
+                ><span class="nav text">Explore</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-cog icon"></i
+                ><span class="nav text">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-content">
+          <div class="mode">
+            <div class="moon-sun">
+              <!-- Will do it afterwords -->
+            </div>
+            <!-- <span class="mode-text text">Dark Mode</span> -->
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </div>
+          <div class="logout">
+            <li class="nav-link">
+              <a href="#"
+                ><i class="bx bx-log-out icon"></i
+                ><span class="nav text">Sign Out</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="container">
+        <h1>What is an IP Address?</h1>
+        <p>
+          All the computers of the world on the Internet network communicate
+          with each other with underground or underwater cables or wirelessly.
+          If I want to download a file from the internet or load a web page or
+          literally do anything related to the internet, my computer must have
+          an address so that other computers can find and locate mine in order
+          to deliver that particular file or webpage that I am requesting. In
+          technical terms, that address is called
+          <b>IP Address or Internet Protocol Address.</b><br /><br />
+          Let us understand it with another example, like if someone wants to
+          send you a mail then he/she must have your home address. Similarly,
+          your computer too needs an address so that other computers on the
+          internet can communicate with each other without the confusion of
+          delivering information to someone else’s computer. And that is why
+          each computer in this world has a unique IP Address. Or in other
+          words, an IP address is a unique address that is used to identify
+          computers or nodes on the internet. This address is just a string of
+          numbers written in a certain format. It is generally expressed in a
+          set of numbers for example 192.155.12.1. Here each number in the set
+          is from 0 to 255 range. Or we can say that a full IP address ranges
+          from 0.0.0.0 to 255.255.255.255. And these IP addresses are assigned
+          by IANA(known as Internet Corporation For Internet Assigned Numbers
+          Authority).
+          <br /><br />
+          But what is Internet protocol? This is just a set of rules that makes
+          the internet work. You are able to read this article because your
+          computer or phone has a unique address where the page that you
+          requested (to read this article from GeeksforGeeks) has been delivered
+          successfully.
+        </p>
+
+        <h5>Working of IP addresses</h5>
+        <p>
+          The working of IP addresses is similar to other languages. It can also
+          use some set of rules to send information. Using these protocols we
+          can easily send, and receive data or files to the connected devices.
+          There are several steps behind the scenes. Let us look at them
+        </p>
+        <ul>
+          <li>
+            Your device directly requests your Internet Service Provider which
+            then grants your device access to the web.
+          </li>
+          <li>
+            Your internet activity goes through your service provider, and they
+            route it back to you, using your IP address.
+          </li>
+          <li>
+            Your IP address can change. For example, turning your router on or
+            off can change your IP Address.
+          </li>
+          <li>
+            When you are out from your home location your home IP address
+            doesn’t accompany you. It changes as you change the network of your
+            device.
+          </li>
+        </ul>
+        <h5>Types of IP Address</h5>
+        <ol>
+          <h6>IP Address is of two types:</h6>
+          <li>
+            <b>IPv4:</b> Internet Protocol version 4. It consists of 4 numbers
+            separated by the dots. Each number can be from 0-255 in decimal
+            numbers. But computers do not understand decimal numbers, they
+            instead change them to binary numbers which are only 0 and 1.
+            Therefore, in binary, this (0-255) range can be written as (00000000
+            – 11111111). Since each number N can be represented by a group of
+            8-digit binary digits. So, a whole IPv4 binary address can be
+            represented by 32-bits of binary digits. In IPv4, a unique sequence
+            of bits is assigned to a computer, so a total of (2^32) devices
+            approximately = 4,294,967,296 can be assigned with IPv4.
+            <br /><br />
+            IPv4 can be written as: <br />
+            <div class="bg-secondary-subtle">189.123.123.90</div>
+          </li>
+        </ol>
+      </div>
+      <h3>IPV4</h3>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              What is IPv4?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              IP stands for Internet Protocol and v4 stands for Version Four
+              (IPv4). IPv4 was the primary version brought into action for
+              production within the ARPANET in 1983. IP version four addresses
+              are 32-bit integers which will be expressed in decimal notation.
+              Example- 192.0.2.126 could be an IPv4 address.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Parts of IPv4
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                Network part
+              </ul>
+              <ul>
+                Host Part
+              </ul>
+              <ul>
+                Subnet number
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Network part
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The network part indicates the distinctive variety that’s
+              appointed to the network. The network part conjointly identifies
+              the category of the network that’s assigned.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Host Part
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The host part uniquely identifies the machine on your network.
+              This part of the IPv4 address is assigned to every host. For each
+              host on the network, the network part is the same, however, the
+              host half must vary.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              Subnet number
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              This is the nonobligatory part of IPv4. Local networks that have
+              massive numbers of hosts are divided into subnets and subnet
+              numbers are appointed to that.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              Characteristics of IPv4
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                IPv4 could be a 32-Bit IP Address.
+              </ul>
+              <ul>
+                IPv4 could be a numeric address, and its bits are separated by a
+                dot.
+              </ul>
+              <ul>
+                The number of header fields is twelve and the length of the
+                header field is twenty.
+              </ul>
+              <ul>
+                It has Unicast, broadcast, and multicast style of addresses.
+              </ul>
+              <ul>
+                IPv4 supports VLSM (Virtual Length Subnet Mask).
+              </ul>
+              <ul>
+                IPv4 uses the Post Address Resolution Protocol to map to the MAC
+                address.
+              </ul>
+              <ul>
+                RIP may be a routing protocol supported by the routed daemon.
+              </ul>
+              <ul>
+                Networks ought to be designed either manually or with DHCP.
+              </ul>
+              <ul>
+                Packet fragmentation permits from routers and causing host.
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven"
+              aria-expanded="false"
+              aria-controls="flush-collapseSeven"
+            >
+              Advantages of IPv4
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                IPv4 security permits encryption to keep up privacy and
+                security.
+              </ul>
+              <ul>
+                IPV4 network allocation is significant and presently has quite
+                85000 practical routers.
+              </ul>
+              <ul>
+                It becomes easy to attach multiple devices across an outsized
+                network while not NAT.
+              </ul>
+              <ul>
+                This is a model of communication so provides quality service
+                also as economical knowledge transfer.
+              </ul>
+              <ul>
+                IPV4 addresses are redefined and permit flawless encoding.
+              </ul>
+              <ul>
+                Routing is a lot of scalable and economical as a result of
+                addressing is collective more effectively.
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEight"
+              aria-expanded="false"
+              aria-controls="flush-collapseEight"
+            >
+              Limitations of IPv4
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                IP relies on network layer addresses to identify end-points on
+                network, and each network has a unique IP address.
+              </ul>
+              <ul>
+                The world’s supply of unique IP addresses is dwindling, and they
+                might eventually run out theoretically.
+              </ul>
+              <ul>
+                If there are multiple host, we need IP addresses of next class.
+              </ul>
+              <ul>
+                Complex host and routing configuration, non-hierarchical
+                addressing, difficult to re-numbering addresses, large routing
+                tables, non-trivial implementations in providing security, QoS
+                (Quality of Service), mobility and multi-homing, multicasting
+                etc. are the big limitation of IPv4 so that’s why IPv6 came into
+                the picture.
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>IPV6</h3>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseNine"
+              aria-expanded="false"
+              aria-controls="flush-collapseNine"
+            >
+              What is IPv6?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseNine"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              IPv6 or Internet Protocol Version 6 is a network layer protocol
+              that allows communication to take place over the network. IPv6 was
+              designed by Internet Engineering Task Force (IETF) in December
+              1998 with the purpose of superseding the IPv4 due to the global
+              exponentially growing internet users.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTen"
+              aria-expanded="false"
+              aria-controls="flush-collapseTen"
+            >
+              Types of IPv6 Address
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                Unicast addresses
+              </ul>
+              <ul>
+                Multicast addresses
+              </ul>
+              <ul>
+                Anycast addresses
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEleven"
+              aria-expanded="false"
+              aria-controls="flush-collapseEleven"
+            >
+              Unicast addresses
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEleven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              It identifies a unique node on a network and usually refers to a
+              single sender or a single receiver.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwelve"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwelve"
+            >
+              Multicast addresses
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwelve"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              It represents a group of IP devices and can only be used as the
+              destination of a datagram.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThirteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseThirteen"
+            >
+              Anycast addresses
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThirteen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              It is assigned to a set of interfaces that typically belong to
+              different nodes.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseForteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseForteen"
+            >
+              Advantages of IPv6
+            </button>
+          </h2>
+          <div
+            id="flush-collapseForteen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                Reliability
+              </ul>
+              <ul>
+                Faster Speeds: IPv6 supports multicast rather than broadcast in
+                IPv4.This feature allows bandwidth-intensive packet flows (like
+                multimedia streams) to be sent to multiple destinations all at
+                once.
+              </ul>
+              <ul>
+                Stronger Security: IPSecurity, which provides confidentiality,
+                and data integrity, is embedded into IPv6.
+              </ul>
+              <ul>
+                Routing efficiency
+              </ul>
+              <ul>
+                Most importantly it’s the final solution for growing nodes in
+                Global-network.
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFifteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseFifteen"
+            >
+              Disadvantages of IPv6
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFifteen"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                Conversion: Due to widespread present usage of IPv4 it will take
+                a long period to completely shift to IPv6.
+              </ul>
+              <ul>
+                Communication: IPv4 and IPv6 machines cannot communicate
+                directly with each other. They need an intermediate technology
+                to make that possible.
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>
